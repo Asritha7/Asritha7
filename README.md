@@ -8,6 +8,7 @@ Software engineer at **Goldman Sachs**, working on Java services, AWS infrastruc
 
 | Project | What to explore |
 |---|---|
+| [OpsLens AI](https://github.com/Asritha7/opslens-ai) | In-progress personal project: version-aware runbook selection, explicit conflict checks, and regression tests using fictional operational documents |
 | [Engineering portfolio](https://github.com/Asritha7/asritha-portfolio) | Professional case studies, engineering notes, and the website implementation |
 | [Job Intake Service](https://github.com/Asritha7/job-intake-service) | Standalone Java exercise: atomic idempotency, explicit HTTP errors, and concurrent integration tests |
 | [SONAR classification](https://github.com/Asritha7/SONAR-RockVsMine-Prediction-ML-Python) | Earlier Python learning project, refreshed with reproducible evaluation and validated input |
