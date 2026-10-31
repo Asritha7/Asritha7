@@ -2,11 +2,24 @@
 
 **Software Engineer @ Goldman Sachs** · Java backend engineering · Distributed systems · Cloud & platform reliability
 
-I build software with a focus on **correctness under concurrency, security boundaries, and operational reliability**. My public projects explore durable job processing, evidence-aware retrieval, identity and authorization, and reproducible engineering experiments.
+I build software with a focus on **correctness under concurrency, security boundaries, and operational reliability**. Explore my live engineering portfolio for professional case studies, technical writing, and research, or dive into the backend systems I build in public.
 
-[**Portfolio**](https://asritha.dev) · [**Engineering case studies**](https://asritha.dev/work) · [**LinkedIn**](https://www.linkedin.com/in/asritha-nibhanupudi) · [**Email**](mailto:nibhanupudiasritha@gmail.com)
+**[🌐 Visit my portfolio — asritha.dev](https://asritha.dev)** · [Engineering case studies](https://asritha.dev/work) · [LinkedIn](https://www.linkedin.com/in/asritha-nibhanupudi) · [Email](mailto:nibhanupudiasritha@gmail.com)
 
-## Featured projects
+## Featured work
+
+### [🌐 Engineering Portfolio — asritha.dev](https://asritha.dev)
+
+**Live website · React 19 · TanStack Start · TypeScript · Tailwind CSS · Cloudflare Workers**
+
+My professional home on the web, featuring **engineering case studies, technical deep dives, public projects, and published research**—with a focus on what I built, why I made particular technical decisions, and the engineering trade-offs involved.
+
+- **Engineering case studies:** Explore the professional work and architecture decisions I can discuss publicly.
+- **Technical notes:** Practical references on Keycloak automation, Kafka/Strimzi upgrades, and Kubernetes deployment debugging.
+- **Built for the web:** Server-side rendering, accessible interactions, responsive design, SEO metadata, and light/amber/dark themes.
+- **Live deployment:** Served at [asritha.dev](https://asritha.dev), with source in the [public portfolio repository](https://github.com/Asritha7/asritha-portfolio).
+
+**[Visit the live portfolio](https://asritha.dev)** · **[Browse the case studies](https://asritha.dev/work)** · **[View the source](https://github.com/Asritha7/asritha-portfolio)**
 
 ### [Runreviq — Operational evidence workspace](https://github.com/Asritha7/runreviq)
 
@@ -42,7 +55,6 @@ A standalone Java service demonstrating how to **accept work durably, handle amb
 
 | Repository | Focus |
 | --- | --- |
-| [Engineering portfolio](https://github.com/Asritha7/asritha-portfolio) | Public code behind [asritha.dev](https://asritha.dev), built with React, TanStack Start and Cloudflare Workers |
 | [SONAR rock vs. mine classification](https://github.com/Asritha7/SONAR-RockVsMine-Prediction-ML-Python) | Earlier Python machine-learning exercise |
 | [YouTube comment analysis](https://github.com/Asritha7/YouTube-Comment-Analysis-Python) | Earlier API and sentiment-analysis exercise |
 
