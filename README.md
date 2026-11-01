@@ -1,73 +1,60 @@
 # Asritha Nibhanupudi
 
-**Software Engineer @ Goldman Sachs** · Java backend engineering · Distributed systems · Cloud & platform reliability
+**Software Engineer @ Goldman Sachs** · Java backend · Distributed systems · Platform reliability
 
-I build software with a focus on **correctness under concurrency, security boundaries, and operational reliability**. Explore my live engineering portfolio for professional case studies, technical writing, and research, or dive into the backend systems I build in public.
+I enjoy building systems where correctness matters: **durable state, safe concurrency, authorization boundaries, and recovery when things go wrong**. I document the design trade-offs and failure cases—not just the happy path.
 
-**[🌐 Visit my portfolio — asritha.dev](https://asritha.dev)** · [Engineering case studies](https://asritha.dev/work) · [LinkedIn](https://www.linkedin.com/in/asritha-nibhanupudi) · [Email](mailto:nibhanupudiasritha@gmail.com)
+**[🌐 Explore my live portfolio](https://asritha.dev)** · [Engineering case studies](https://asritha.dev/work) · [Technical notes](https://asritha.dev/notes) · [LinkedIn](https://www.linkedin.com/in/asritha-nibhanupudi) · [Email](mailto:nibhanupudiasritha@gmail.com)
 
-## Featured work
+## Featured engineering work
 
-### [🌐 Engineering Portfolio — asritha.dev](https://asritha.dev)
+### 🌐 [Engineering Portfolio — asritha.dev](https://asritha.dev)
 
-**Live website · React 19 · TanStack Start · TypeScript · Tailwind CSS · Cloudflare Workers**
+**React 19 · TanStack Start · TypeScript · Tailwind CSS · Cloudflare Workers**
 
-My professional home on the web, featuring **engineering case studies, technical deep dives, public projects, and published research**—with a focus on what I built, why I made particular technical decisions, and the engineering trade-offs involved.
+My live professional home, with **engineering case studies, technical notes, research, and project walkthroughs**. Built with server-side rendering, accessible navigation, responsive design, route-level SEO, and a three-mode theme system.
 
-- **Engineering case studies:** Explore the professional work and architecture decisions I can discuss publicly.
-- **Technical notes:** Practical references on Keycloak automation, Kafka/Strimzi upgrades, and Kubernetes deployment debugging.
-- **Built for the web:** Server-side rendering, accessible interactions, responsive design, SEO metadata, and light/amber/dark themes.
-- **Live deployment:** Served at [asritha.dev](https://asritha.dev), with source in the [public portfolio repository](https://github.com/Asritha7/asritha-portfolio).
+**[Visit the website](https://asritha.dev)** · [Read case studies](https://asritha.dev/work) · [Browse the public source](https://github.com/Asritha7/asritha-portfolio)
 
-**[Visit the live portfolio](https://asritha.dev)** · **[Browse the case studies](https://asritha.dev/work)** · **[View the source](https://github.com/Asritha7/asritha-portfolio)**
+### 🛡️ [Runreviq — Governed operational evidence retrieval](https://github.com/Asritha7/runreviq)
 
-### [Runreviq — Operational evidence workspace](https://github.com/Asritha7/runreviq)
+**Python / FastAPI · Java / Spring Boot migration · PostgreSQL RLS · OIDC · Evaluation**
 
-**Java / Spring Boot · PostgreSQL · Row-level security · OIDC · Retrieval evaluation**
+An access-controlled prototype for locating **applicable and authorized runbook evidence** by service, environment, version, and incident context.
 
-An in-progress, access-controlled workspace for finding the *applicable* operational runbook for a specific service, version, environment and incident context—without treating every matching document as reliable guidance.
+- Governed document drafts, independent review, publication, immutable revisions, and withdrawal.
+- Role-restricted PostgreSQL evidence reads, source-integrity checks, and exact cited passages.
+- Deterministic retrieval and repeatable relevance evaluations, including failure analysis against external scenarios.
 
-- **Evidence governance:** Private Markdown drafts, independent review, controlled publication, immutable revisions and withdrawal.
-- **Trust boundaries:** Google OIDC or local demo identities, restricted PostgreSQL roles and row-level security, source-integrity checks and exact cited passages.
-- **Retrieval and evaluation:** Applicability-aware filtering, structured conflict checks, lexical ranking and repeatable comparison against synthetic and externally supplied incident questions.
-- **Migration discipline:** A staged Python-to-Java backend migration, cross-language parity checks and an isolated Java browser/rollback rehearsal.
+*Status: local prototype; Python remains the working runtime while Java cutover is in progress. Retrieval quality has known limitations. No LLM-generated answers or semantic contradiction detection.*
 
-**Current boundary:** This is a local prototype. Retrieval still has documented misses on fresh incident scenarios; automatic prose contradiction discovery and LLM-generated answers are **not implemented**. Java runtime cutover and independent quality acceptance remain ongoing.
+**[Architecture, implementation, and evaluation](https://github.com/Asritha7/runreviq)**
 
-[Explore the source, architecture and experiments](https://github.com/Asritha7/runreviq)
+### ⚙️ [Job Intake Service — Durable asynchronous job processing](https://github.com/Asritha7/job-intake-service)
 
-### [Job Intake Service — Durable, idempotent job processing](https://github.com/Asritha7/job-intake-service)
+**Java 21 · PostgreSQL · JDBC · HikariCP (opt-in) · HTTP · Concurrency**
 
-**Java 21+ · PostgreSQL · JDBC · HTTP APIs · Concurrency**
+A Java backend reference that explores **idempotent acceptance, safe retries, concurrent workers, and crash recovery**.
 
-A standalone Java service demonstrating how to **accept work durably, handle ambiguous retries, and execute jobs safely across process restarts**.
+- Transactional admission with database-enforced key uniqueness and shared capacity across API instances.
+- Worker leases, attempt limits, stale-owner fencing, and durable results for a deterministic SHA-256 job.
+- Bounded HTTP resources, liveness/readiness, metrics, checksum-verified migrations, and graceful shutdown.
+- Optional bounded connection pooling, with CI experiments covering contention, backend recovery, and independent-JVM correctness.
 
-- **Atomic idempotency:** Duplicate requests reuse the original job ID; conflicting key reuse returns an explicit HTTP 409.
-- **Durability and capacity:** PostgreSQL transactions and unique constraints preserve accepted work, with bounded intake capacity and checksum-verified SQL migrations.
-- **Worker reliability:** Lease-based claims, retry scheduling, stale-owner protection and concurrent workers; the demo task computes a payload SHA-256 hash.
-- **Operational behavior:** Readiness and process-local metrics, bounded HTTP resources, graceful shutdown, and database-backed concurrency and restart tests.
+*Status: local reference implementation; pooling is disabled by default. No authentication, tenant isolation, TLS, or exactly-once external execution guarantee.*
 
-**Current boundary:** A local reference implementation—not a production job platform. It does not provide authentication, tenant isolation, TLS or exactly-once execution.
+**[Explore architecture, API, and verified experiments](https://github.com/Asritha7/job-intake-service)**
 
-[Explore the API, worker design and tests](https://github.com/Asritha7/job-intake-service)
+## What I work with
 
-## More work
+**Backend & data:** Java, Spring Boot, PostgreSQL, JDBC, transactional consistency, concurrency  
+**Cloud & platform:** Docker, Kubernetes, AWS, CI/CD, observability, reliability engineering  
+**Evidence & AI systems:** Retrieval evaluation, access control, reviewed knowledge workflows
 
-| Repository | Focus |
-| --- | --- |
-| [SONAR rock vs. mine classification](https://github.com/Asritha7/SONAR-RockVsMine-Prediction-ML-Python) | Earlier Python machine-learning exercise |
-| [YouTube comment analysis](https://github.com/Asritha7/YouTube-Comment-Analysis-Python) | Earlier API and sentiment-analysis exercise |
+## Research & earlier projects
 
-## Areas I'm exploring
-
-**Backend:** Java, Spring Boot, HTTP APIs, PostgreSQL, concurrency and transactional consistency  
-**Platform:** AWS, Docker, Kubernetes, CI/CD, observability and reliability  
-**AI systems:** Evidence retrieval, evaluation methodology, human-reviewed knowledge and grounded generation
-
-## Research
-
-Co-authored an [IEEE ICMACC 2024 publication on RFID- and PIN-based access control](https://ieeexplore.ieee.org/document/10893942).
+Co-authored an [IEEE ICMACC 2024 paper on RFID- and PIN-based access control](https://ieeexplore.ieee.org/document/10893942). Earlier exploration includes [SONAR classification](https://github.com/Asritha7/SONAR-RockVsMine-Prediction-ML-Python) and [YouTube comment analysis](https://github.com/Asritha7/YouTube-Comment-Analysis-Python).
 
 ---
 
-*These are personal projects and learning work; no employer source code or internal data is published. For professional experience, see my [sanitized case studies](https://asritha.dev/work).*
+*These repositories are personal learning and engineering projects, not employer source code. Professional case studies are published in a [sanitized public format](https://asritha.dev/work).*
